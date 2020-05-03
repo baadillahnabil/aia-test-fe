@@ -15,6 +15,7 @@ export default makeStyles((theme) => ({
   gridList: {
     width: '100%',
     height: '100%',
+    flexWrap: 'nowrap',
   },
   icon: {
     color: 'rgba(255, 255, 255, 0.54)',

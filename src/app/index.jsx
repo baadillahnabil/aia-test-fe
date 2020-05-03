@@ -10,6 +10,7 @@ import {
 } from '@material-ui/core'
 import { Info as InfoIcon } from '@material-ui/icons'
 import { isEmpty } from 'lodash'
+import LazyLoad from 'react-lazyload'
 
 import useStyles from './styles'
 
@@ -44,10 +45,12 @@ const App = () => {
           <Typography variant='h4' component='h4' className={classes.pageTitle}>
             Flickr Public Feed
           </Typography>
-          <GridList cellHeight={180} className={classes.gridList} cols={4}>
+          <GridList cellHeight={750} className={classes.gridList} cols={2}>
             {posts.map((post, index) => (
-              <GridListTile key={index} style={{ height: 300 }}>
-                <img src={post.content.image} alt={post.title} />
+              <GridListTile key={index} style={{ height: 750 }}>
+                <LazyLoad height={300} once placeholder={<CircularProgress />} overflow>
+                  <img src={post.content.image} alt={post.title} />
+                </LazyLoad>
                 <GridListTileBar
                   title={post.title}
                   subtitle={<span>by: {post.author.name}</span>}
