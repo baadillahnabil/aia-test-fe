@@ -16,6 +16,7 @@
     "lodash": "^4.17.15",
     "react": "latest",
     "react-dom": "latest",
+    "react-lazyload": "^2.6.7",
     "react-scripts": "latest"
   },
   "devDependencies": {
