@@ -1,6 +1,6 @@
 #### How to Serve:
 
-> You can just launch the Frontend by using this url `https://aia-test-fe.now.sh/` **BUT YOU STILL NEED TO SERVE YOUR BACKEND LOCALLY!**
+> You can just launch the Frontend by using this url `https://aia-test-fe.now.sh/`
 
 1. clone this repo
 2. install dependencies by running `yarn`
