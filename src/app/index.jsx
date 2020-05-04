@@ -22,7 +22,7 @@ const App = () => {
   useEffect(() => {
     const fetchAPI = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/feed')
+        const response = await axios.get('https://aia-test-be.herokuapp.com/feed')
         setPosts(response.data.data)
       } catch (error) {
         console.log(error)
